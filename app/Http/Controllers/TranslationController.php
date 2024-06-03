@@ -22,7 +22,7 @@ class TranslationController extends Controller
 
   public function edit(Request $request, $locale)
   {
-    $jsonFile = base_path('lang\\' . $locale . '.json');
+    $jsonFile = base_path('lang/' . $locale . '.json');
     $jsonContent = file_get_contents($jsonFile);
 
     return view('dashboard.translations.edit', compact('jsonContent', 'locale'));
@@ -38,7 +38,7 @@ class TranslationController extends Controller
 
   public function update(Request $request)
   {
-    $file = base_path('lang\\' . $request->locale . '.json');
+    $file = base_path('lang/' . $request->locale . '.json');
     file_put_contents($file, $request->content);
 
     return redirect()->back();
