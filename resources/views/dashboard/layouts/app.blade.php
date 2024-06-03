@@ -36,6 +36,8 @@
 
   {{-- Normalize CSS --}}
   <link rel="stylesheet" href="{{ asset('plugins/normalize.css') }}">
+
+  @vite('public/css/dashboard.css')
 </head>
 
 <body class="body">

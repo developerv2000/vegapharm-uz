@@ -19,5 +19,10 @@
     "css": [
       "assets/dashboard.bbc17b71.css"
     ]
+  },
+  "public/css/dashboard.css": {
+    "file": "assets/dashboard.bbc17b71.css",
+    "src": "public/css/dashboard.css",
+    "isEntry": true
   }
 }

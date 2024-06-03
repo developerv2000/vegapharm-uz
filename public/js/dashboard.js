@@ -1,5 +1,3 @@
-import '../css/dashboard.css';
-
 // Add headers for Ajax Request
 $.ajaxSetup({
   headers: {

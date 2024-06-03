@@ -6,6 +6,7 @@ export default defineConfig({
     laravel([
       'public/js/styles.js',
       'public/js/app.js',
+      'public/css/dashboard.css',
       'public/js/dashboard.js',
     ]),
   ],
