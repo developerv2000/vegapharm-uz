@@ -46,10 +46,10 @@ class TranslationController extends Controller
 
   public function reset(Request $request)
   {
-    $defaultFile = base_path('lang\default.json');
+    $defaultFile = base_path('lang/default.json');
     $defaultContent = file_get_contents($defaultFile);
 
-    $file = base_path('lang\\' . $request->locale . '.json');
+    $file = base_path('lang/' . $request->locale . '.json');
     file_put_contents($file, $defaultContent);
 
     return redirect()->back();
