@@ -1,0 +1,334 @@
+/* ------------ Home page ------------ */
+/* Home greeting */
+
+/* Stars section */
+.stars-section__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.stars-carousel-container {
+  padding-top: 24px;
+}
+
+.stars-carousel__item-header {
+  display: flex;
+  align-items: center;
+  background: var(--main-color);
+  border-radius: 24px;
+  color: white;
+  padding: 6px;
+  gap: 12px;
+}
+
+.stars-carousel__item-icon {
+  display: flex;
+  background: white;
+  border-radius: 50%;
+}
+
+.stars-carousel__item-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--secondary-color);
+  transform: translateY(2px);
+}
+
+.stars-carousel__item-text {
+  margin: 20px 0 0;
+}
+
+/* About us */
+.about-us__inner {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  color: white;
+}
+
+.about-us__title {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Corporate Culture */
+.corporate-culture__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Achevements section */
+.achievements-section {
+  background-color: var(--background-color);
+}
+
+.achievements-section__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.achievements-carousel-container {
+  padding-top: 10px;
+}
+
+.achievements-carousel__item {
+  background-color: white;
+  border-radius: 24px;
+  padding-bottom: 8px;
+}
+
+.achievements-carousel__item-header {
+  display: flex;
+  align-items: center;
+  background: var(--main-color);
+  border-radius: 24px;
+  color: white;
+  padding: 6px;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.achievements-carousel__item-icon {
+  display: flex;
+  background: white;
+  border-radius: 50%;
+}
+
+.achievements-carousel__item-icon svg {
+  width: 38px;
+  height: 38px;
+  color: var(--text-color);
+  transform: translateY(2px);
+}
+
+.achievements-carousel__item-image {
+  margin: 0 8px;
+  border-radius: 24px;
+  width: calc(100% - 16px) !important;
+}
+
+/* Activity section */
+.activity-section__inner {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  color: white;
+}
+
+.activity-section__title {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Home Global */
+.home__global {
+  background-color: var(--background-color);
+}
+
+.home__global__inner {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  flex-direction: column;
+}
+
+.home-products__title {
+  margin-bottom: 20px;
+}
+
+.home-products__categories-more-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+/* Our Presence */
+.our-presence {
+  margin-top: 32px;
+}
+
+.our-presence__title {
+  margin-bottom: 16px;
+}
+
+.our-presence__text {
+  max-width: 665px;
+}
+
+/* Presence Globe */
+.presence-globe {
+  margin-top: 32px;
+  position: relative;
+}
+
+.presence-globe__panel {
+  min-height: 280px;
+  padding: 48px 50% 48px 32px;
+}
+
+.presence-globe__cities {
+  margin-bottom: 40px;
+}
+
+.presence-globe__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.presence-globe__image {
+  position: absolute;
+  top: -190px;
+  left: 45%;
+  pointer-events: none;
+}
+
+/* Career & Feedback */
+.career-feedback-divider {
+  margin-top: 32px;
+}
+
+.career-feedback-divider__inner {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 60px
+}
+
+.career-block {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.career-block__text {
+  flex-grow: 1;
+  padding: 40px 32px 30px;
+  font-weight: 300;
+}
+
+.feedback-block {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.feedback-submit {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+/* ------------ /end Home page ------------ */
+
+
+/* ------------ Products index page ------------ */
+.our-products__inner {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.our-products__text-container {
+  padding-left: 40px;
+}
+
+.our-products__title {
+  margin-bottom: 24px;
+}
+
+/* Products section */
+.products-section {
+  background-color: var(--background-color);
+}
+
+.products-section__inner {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.products-list-container {
+  padding-top: 40px;
+}
+
+.products-list__title-container {
+  margin-bottom: 32px;
+}
+
+.products-list__title {
+  margin: 0;
+}
+
+/* Popular products */
+.popular-products {
+  position: relative;
+}
+
+.popular-products--blue {
+  background-color: var(--background-color);
+}
+
+.popular-products__inner {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+
+.popular-products__foot {
+  background-color: var(--background-color);
+  height: 100px;
+}
+
+.popular-products__title {
+  margin-bottom: 32px;
+}
+
+/* ------------ /end Products index page ------------ */
+
+
+/* ------------ Products show page ------------ */
+.products-show-filter-section__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-product {
+  background: var(--background-color);
+}
+
+.about-product__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.about-product__title {
+  margin: 0;
+}
+
+.product-instruction-link {
+  margin-left: auto;
+  margin-top: 32px;
+}
+
+/* Similar products */
+.similar-products__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.similar-products__title {
+  margin-bottom: 32px;
+}
+
+/* Popular Products */
+.products-show-popular-products .popular-products__inner {
+  padding-bottom: 80px;
+}
+
+/* ------------ /end Products show page ------------ */

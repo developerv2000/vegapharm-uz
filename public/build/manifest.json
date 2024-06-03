@@ -1,0 +1,23 @@
+{
+  "public/js/styles.js": {
+    "file": "assets/styles.e2a277a6.js",
+    "src": "public/js/styles.js",
+    "isEntry": true,
+    "css": [
+      "assets/styles.826b8fb9.css"
+    ]
+  },
+  "public/js/app.js": {
+    "file": "assets/app.0f3dcb2b.js",
+    "src": "public/js/app.js",
+    "isEntry": true
+  },
+  "public/js/dashboard.js": {
+    "file": "assets/dashboard.e9b23b0f.js",
+    "src": "public/js/dashboard.js",
+    "isEntry": true,
+    "css": [
+      "assets/dashboard.bbc17b71.css"
+    ]
+  }
+}

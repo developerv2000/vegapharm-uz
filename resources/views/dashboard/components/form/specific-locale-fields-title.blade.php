@@ -1,0 +1,1 @@
+<h2 class="form-title">Поля касающиеся только языка <strong>{{ $locale }}</strong></h2>

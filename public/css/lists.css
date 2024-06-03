@@ -1,0 +1,79 @@
+/* ------------ Corporate Culture ------------ */
+.corporate-culture__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+/* ------------ /end Corporate Culture ------------ */
+
+
+/* ------------ Home Categories list ------------ */
+.home-products__categories-list {
+  margin: 32px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  list-style: none;
+}
+
+.home-products__categories-item {
+  display: flex;
+  width: calc(25% - 15px);
+}
+
+.home-products__categories-link {
+  display: flex;
+  width: 100%;
+  background: var(--secondary-color);
+  color: white;
+  padding: 5px;
+  border-radius: 24px;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.home-products__categories-item span {
+  color: var(--text-color);
+  padding: 8px;
+  background: white;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+/* ------------ /end Home Categories list ------------ */
+
+
+/* ------------ /end Products list ------------ */
+.products-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.products-list__item {
+  width: calc(25% - 22.5px);
+  display: flex;
+}
+
+/* ------------ /end Products list ------------ */
+
+
+/* ------------ Popular products list ------------ */
+.popular-products-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px 20px;
+  flex-wrap: wrap;
+}
+
+/* ------------ /end Popular products list ------------ */

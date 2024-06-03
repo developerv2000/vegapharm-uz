@@ -1,0 +1,474 @@
+/* ------------ Dropdown ------------ */
+.dropdown {
+  position: relative;
+}
+
+.dropdown__list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 16px;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  list-style-type: none;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown__list {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ------------ /end Dropdown ------------ */
+
+
+/* ------------ Owl Carousel ------------ */
+.owl-carousel-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: calc(50%);
+  transform: translateY(-50%);
+  justify-content: space-between;
+  display: flex;
+  left: -52px;
+  right: -52px;
+}
+
+.owl-carousel .owl-nav button {
+  display: flex;
+  box-shadow: 0 3px 6px #0000003d;
+  border-radius: 50%;
+  background-color: white !important;
+}
+
+.owl-carousel .owl-nav button span {
+  margin: 6px;
+  font-size: 18px;
+}
+
+/* ------------ /end Owl Carousel ------------ */
+
+
+/* ------------ Prescription filter ------------ */
+.prescription-filter {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  gap: 32px
+}
+
+.prescription-filter__item {
+  flex-basis: 50%;
+}
+
+.prescription-filter__input {
+  display: none;
+}
+
+.prescription-filter__label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--background-color);
+  box-shadow: 0 3px 6px #0000003d;
+  border-radius: 24px;
+  padding: 20px 32px;
+  cursor: pointer;
+}
+
+.prescription-filter__input:checked+.prescription-filter__label--rx {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.prescription-filter__input:checked+.prescription-filter__label--otc {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.prescription-filter__label-icon {
+  background: white;
+  padding: 20px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 3px 6px #0000003d;
+  color: var(--text-color);
+}
+
+.prescription-filter__label-text {
+  font-weight: 300;
+}
+
+/* ------------ /end Prescription filter ------------ */
+
+
+/* ------------ Selectize ------------ */
+.selectize-input {
+  display: flex !important;
+}
+
+.selectize-input .item {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selectize-control.single .selectize-input input {
+  color: white;
+}
+
+.selectize-dropdown {
+  backdrop-filter: blur(20px);
+  background: #ffffff99;
+}
+
+.selectize-input.dropdown-active::before {
+  visibility: hidden;
+}
+
+.selectize-dropdown-content {
+  max-height: 212px;
+}
+
+.selectize-dropdown .option {
+  padding: 6px 20px;
+}
+
+.selectize-dropdown .active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* ------------ /end Selectize ------------ */
+
+
+/* ------------ Accordion ------------ */
+.accordion-button {
+  transition: 0.3s;
+}
+
+.accordion-content__item {
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+.accordion-content__item--active {
+  display: flex;
+}
+
+/* Presence globe accordion */
+.presence-accordion-button {
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-weight: 300;
+  border-bottom: 1px solid transparent;
+}
+
+.presence-accordion-button.accordion-button--active {
+  border-color: var(--secondary-color);
+}
+
+.presence-accordion-content {
+  margin-top: 32px;
+  min-height: 50px;
+}
+
+.presence-accordion-content__item {
+  gap: 20px;
+  justify-content: space-between;
+  padding-right: 50%;
+}
+
+.presence-accordion-content__item p {
+  font-size: 13px;
+}
+
+.presence-accordion-content__address {
+  flex-basis: 48%;
+}
+
+.presence-accordion-content__phone,
+.presence-accordion-content__email {
+  flex-basis: 26%;
+}
+
+/* Product card accordion */
+.product-accordion-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.product-accordion-button {
+  border-radius: 24px;
+  background-color: var(--main-color);
+  display: flex;
+  border: none;
+  align-items: center;
+  padding: 5px;
+  gap: 12px;
+  color: white;
+}
+
+.product-accordion-button.accordion-button--active {
+  background-color: var(--secondary-color);
+}
+
+.product-accordion-button span {
+  color: var(--text-color);
+  padding: 8px;
+  background: white;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.product-accordion-button.accordion-button--active span {
+  transform: rotate(90deg);
+}
+
+.product-accordion-content__item {
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+/* ------------ /end Accordion ------------ */
+
+
+/* ------------ Filter ------------ */
+.filter {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.products-show-filter {
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Categories Filter */
+.filter__categories {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.categories-select-container {
+  width: 320px;
+  position: relative;
+}
+
+.filter__categories .selectize-input {
+  background: var(--secondary-color) !important;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 24px;
+  border-color: var(--secondary-color);
+}
+
+.filter__categories .selectize-input .item {
+  max-width: calc(100% - 28px);
+}
+
+.categories-select__icon {
+  position: absolute;
+  display: flex;
+  right: 6px;
+  top: 50%;
+  bottom: 0;
+  z-index: 2;
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  transform: translateY(-50%);
+}
+
+.categories-select__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Search */
+.filter__search {
+  position: relative;
+  width: 320px;
+}
+
+.products-show-filter .filter__search {
+  width: 480px;
+}
+
+.filter__search-input {
+  padding: 16px 20px;
+  height: 52px;
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+  outline: none;
+  font-size: 13px;
+}
+
+.products-show-filter .filter__search-input {
+  background-color: var(--background-color);
+}
+
+.filter__search-dropdown {
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0s 0.2s;
+  width: 100%;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+  border-radius: 0 0 3px 3px;
+  border: 1px solid #d0d0d0;
+  backdrop-filter: blur(20px);
+  background: #ffffff99;
+  opacity: 0;
+}
+
+.filter__search-input:focus~.filter__search-dropdown {
+  transform: scaleY(1);
+  opacity: 1;
+  transition: 0s;
+}
+
+.filter__search-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 212px;
+  overflow-y: auto;
+}
+
+.filter__search-link {
+  padding: 6px 20px;
+  display: flex;
+  font-size: 13px;
+}
+
+.filter__search-link:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.filter__search-icon {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px #00000030;
+}
+
+/* ------------ /end Filter ------------ */
+
+
+/* ------------ Breadcrumbs ------------ */
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  padding: 4px 0 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.breadcrumbs__item {
+  display: flex;
+}
+
+.breadcrumbs__item::after {
+  content: '/';
+  margin-left: 12px;
+}
+
+.breadcrumbs__item:last-child::after {
+  content: none;
+}
+
+/* ------------ /end Breadcrumbs ------------ */
+
+
+/* ------------ Pagination  ------------ */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.pagination__prev {
+  order: -2;
+}
+
+.pagination__next {
+  order: -1;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: black;
+  border: 1px solid transparent;
+}
+
+.page-link.active {
+  background-color: white;
+  color: var(--text-color);
+  border-radius: 4px;
+  border-color: var(--main-color);
+}
+
+.page-link.disabled {
+  color: #D0D8DE;
+}
+
+.pagination__next .page-link {
+  padding: 4px 0;
+}
+
+.pagination__prev .page-link {
+  padding: 4px 0;
+}
+
+.pagination__prev-arrow {
+  transform: rotate(180deg);
+}
+
+/* ------------ /end Pagination  ------------ */
