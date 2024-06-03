@@ -13,12 +13,9 @@
     "isEntry": true
   },
   "public/js/dashboard.js": {
-    "file": "assets/dashboard.03240e1e.js",
+    "file": "assets/dashboard.b4fc5daa.js",
     "src": "public/js/dashboard.js",
-    "isEntry": true,
-    "css": [
-      "assets/dashboard.bbc17b71.css"
-    ]
+    "isEntry": true
   },
   "public/css/dashboard.css": {
     "file": "assets/dashboard.bbc17b71.css",
