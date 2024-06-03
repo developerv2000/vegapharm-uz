@@ -15,8 +15,8 @@ class LocaleSeeder extends Seeder
    */
   public function run()
   {
-    $title = ['Русский', 'English'];
-    $value = ['ru', 'en'];
+    $title = ['Русский', 'O\'zbek'];
+    $value = ['ru', 'uz'];
     $default = [true, false];
     $defaultForDashboard = [true, false];
 

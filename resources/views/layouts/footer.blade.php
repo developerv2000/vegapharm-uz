@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer__inner main-container">
     <a class="logo footer__logo" href="{{ route('home') }}">
-      <img class="logo__image" src="{{ asset('img/main/logo-new-white.png') }}" alt="Vegapharm logo">
+      <img class="logo__image" src="{{ asset('img/main/logo-white.png') }}" alt="Vegapharm logo">
     </a>
 
     <div class="footer__main">

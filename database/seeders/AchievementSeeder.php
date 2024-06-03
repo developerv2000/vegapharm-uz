@@ -30,7 +30,7 @@ class AchievementSeeder extends Seeder
         'title' => $ruTitle[$i],
       ]);
 
-      $a->translations()->where('locale', 'en')->first()->update([
+      $a->translations()->where('locale', 'uz')->first()->update([
         'title' => $enTitle[$i],
       ]);
     }

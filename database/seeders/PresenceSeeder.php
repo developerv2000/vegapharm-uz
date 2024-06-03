@@ -30,7 +30,7 @@ class PresenceSeeder extends Seeder
         'email' => 'info@vegapharm.tj'
       ]);
 
-      $p->translations()->where('locale', 'en')->first()->update([
+      $p->translations()->where('locale', 'uz')->first()->update([
         'title' => $ruTitle[$i],
         'address' => '“Vegapharm” улица Н.Карабаева 78/1',
         'phone' => '(+992) 93-444-26-44',

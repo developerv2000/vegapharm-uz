@@ -8,30 +8,30 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-  public static $tag = 'products';
+    public static $tag = 'products';
 
-  use HasFactory;
-  use Translateable;
+    use HasFactory;
+    use Translateable;
 
-  public function categories()
-  {
-    return $this->belongsToMany(Category::class);
-  }
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class);
+    }
 
-  protected static function booted()
-  {
-    // Create translations for each locale
-    static::created(function ($item) {
-      self::createTranslations($item);
-    });
+    protected static function booted()
+    {
+        // Create translations for each locale
+        static::created(function ($item) {
+            self::createTranslations($item);
+        });
 
-    // Also delete model relations
-    static::deleting(function ($item) {
-      $item->categories()->detach();
+        // Also delete model relations
+        static::deleting(function ($item) {
+            $item->categories()->detach();
 
-      $item->translations()->each(function ($translation) {
-        $translation->delete();
-      });
-    });
-  }
+            $item->translations()->each(function ($translation) {
+                $translation->delete();
+            });
+        });
+    }
 }

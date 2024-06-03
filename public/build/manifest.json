@@ -1,10 +1,10 @@
 {
   "public/js/styles.js": {
-    "file": "assets/styles.e2a277a6.js",
+    "file": "assets/styles.a239223d.js",
     "src": "public/js/styles.js",
     "isEntry": true,
     "css": [
-      "assets/styles.826b8fb9.css"
+      "assets/styles.0b205fb0.css"
     ]
   },
   "public/js/app.js": {
@@ -13,7 +13,7 @@
     "isEntry": true
   },
   "public/js/dashboard.js": {
-    "file": "assets/dashboard.e9b23b0f.js",
+    "file": "assets/dashboard.03240e1e.js",
     "src": "public/js/dashboard.js",
     "isEntry": true,
     "css": [
