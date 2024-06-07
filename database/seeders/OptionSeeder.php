@@ -254,6 +254,19 @@ class OptionSeeder extends Seeder
       'value' => '#'
     ]);
 
+    $opt = new Option();
+    $opt->title = 'Ютуб ссылка';
+    $opt->key = 'youtube-link';
+    $opt->wysiwyg = false;
+    $opt->save();
+
+    $opt->translations()->where('locale', 'ru')->first()->update([
+      'value' => '#'
+    ]);
+
+    $opt->translations()->where('locale', 'uz')->first()->update([
+      'value' => '#'
+    ]);
 
     $opt = new Option();
     $opt->title = 'Мета-тег описание сайта. Реком/длина 50 - 160 символа';
