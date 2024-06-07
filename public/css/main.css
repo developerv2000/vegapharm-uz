@@ -358,7 +358,7 @@ button {
     font-size: 16px;
 }
 
-.greeting .navbar__list {
+.home-greeting .navbar__list {
     padding-left: 32px;
 }
 
@@ -408,6 +408,10 @@ button {
     padding-bottom: 80px;
     gap: 180px;
     position: relative;
+}
+
+.footer__logo .logo__image {
+    max-width: unset;
 }
 
 .footer__main {
