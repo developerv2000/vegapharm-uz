@@ -72,7 +72,7 @@
   @vite('public/js/styles.js')
 </head>
 
-<body>
+<body class="lang-{{ app()->getLocale() }}">
   @include('layouts.header')
   <main class="main">
     @yield('main')

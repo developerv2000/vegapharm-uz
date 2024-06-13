@@ -132,8 +132,9 @@
 
   .greeting .navbar__list {
     font-size: 14px;
-    gap: 0px;
-    justify-content: space-between;
+    gap: 12px 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   /* Greeting end */
 

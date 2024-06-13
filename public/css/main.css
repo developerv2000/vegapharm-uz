@@ -381,6 +381,10 @@ button {
     color: white;
 }
 
+.lang-uz .greeting__body .navbar__list {
+    gap: 0;
+    font-size: 15px;
+}
 /* ------------ /end Navbar ------------ */
 
 

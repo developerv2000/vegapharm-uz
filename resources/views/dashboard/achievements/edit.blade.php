@@ -8,7 +8,6 @@
 
   {{-- Same filds for all languages start --}}
   <div class="form-section">
-    @include('dashboard.components.form.same-fields-title')
 
     <div class="form-group">
       <label class="form-label">Изображение</label>
