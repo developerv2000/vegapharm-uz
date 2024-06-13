@@ -1,8 +1,6 @@
 @extends('dashboard.layouts.app')
 @section('main')
 
-@include('dashboard.components.search')
-
 <div class="main-table-container">
   <div class="main-table-container__inner">
 
@@ -27,11 +25,6 @@
               href="{{ route($modelTag . '.dashboard.index') }}?page={{ $activePage }}&orderBy=title&orderType={{ $reversedOrderType }}">Заголовок</a>
           </th>
 
-          <th>
-            <a class="{{ $orderType }} {{ $orderBy == 'year' ? 'active' : '' }}"
-              href="{{ route($modelTag . '.dashboard.index') }}?page={{ $activePage }}&orderBy=year&orderType={{ $reversedOrderType }}">Год</a>
-          </th>
-
           <th width="140">
             Действие
           </th>
@@ -49,7 +42,6 @@
           <td></td>
 
           <td>{{ $item->translateForDash('title') }}</td>
-          <td>{{ $item->year }}</td>
 
           {{-- Actions --}}
           <td>

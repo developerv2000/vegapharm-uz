@@ -14,7 +14,7 @@ class AchievementController extends Controller
   public function dashboardIndex(Request $request)
   {
     // Default parameters for ordering
-    $orderBy = $request->orderBy ? $request->orderBy : 'year';
+    $orderBy = $request->orderBy ? $request->orderBy : 'id';
     $orderType = $request->orderType ? $request->orderType : 'asc';
     $activePage = $request->page ? $request->page : 1;
 
@@ -49,8 +49,6 @@ class AchievementController extends Controller
   {
     // same fields for all languages
     $item = new Achievement();
-    $fields = ['year'];
-    Helper::fillModelColumns($item, $fields, $request);
     $item->image = 'uploading';
     $item->save();
 
@@ -87,8 +85,6 @@ class AchievementController extends Controller
   {
     // same fields for all languages
     $item = Achievement::find($request->id);
-    $fields = ['year'];
-    Helper::fillModelColumns($item, $fields, $request);
     $item->save();
 
     // update translation

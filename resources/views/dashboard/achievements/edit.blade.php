@@ -11,12 +11,6 @@
     @include('dashboard.components.form.same-fields-title')
 
     <div class="form-group">
-      <label class="form-label required">Год</label>
-
-      <input class="form-input" type="text" name="year" value="{{ old('year', $item->year) }}" required />
-    </div>
-
-    <div class="form-group">
       <label class="form-label">Изображение</label>
 
       <input class="form-input" type="file" name="image" accept=".png, .jpg, .jpeg" data-action="display-local-image" data-target="local-image">

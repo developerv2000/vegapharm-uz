@@ -15,7 +15,7 @@
           @case('products') Продукты @break
           @case('categories') Категории @break
           @case('options') Тексты @break
-          @case('achievements') Достижения @break
+          @case('achievements') Партнёры @break
           @case('presence') Наше присутствие @break
           @case('stars') Звёзды @break
           @case('translations') Статик текст @break

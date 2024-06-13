@@ -17,12 +17,10 @@ class AchievementSeeder extends Seeder
   {
     $ruTitle = ['Бренд года', 'Бренд года', 'Народная марка', 'Золотая статуэтка Пардифен', 'Бренд года'];
     $enTitle = ['Brand of the Year', 'Brand of the Year', 'People`s stamp', 'Golden figurine Pardifen', 'Brand of the Year'];
-    $year = [2013, 2017, 2017, 2017, 2019];
     $image = ['1.png', '2.png', '3.png', '4.png', '5.png'];
 
     for ($i = 0; $i < count($ruTitle); $i++) {
       $a = new Achievement();
-      $a->year = $year[$i];
       $a->image = $image[$i];
       $a->save();
 

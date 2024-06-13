@@ -19,7 +19,7 @@
 
       <li class="aside__menu-item">
         <a class="aside__menu-link @if( $modelTag == 'achievements') active @endif" href="{{ route('achievements.dashboard.index') }}">
-          <span class="material-icons-outlined">emoji_events</span> Достижения
+          <span class="material-icons-outlined">emoji_events</span> Партнёры
         </a>
       </li>
 

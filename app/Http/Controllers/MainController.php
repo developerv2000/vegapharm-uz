@@ -13,7 +13,7 @@ class MainController extends Controller
     public function home()
     {
         $stars = Star::all();
-        $achievements = Achievement::orderBy('year')->get();
+        $achievements = Achievement::all();
 
         $categories = Category::join('category_translations', function ($join) {
             $join->on('categories.id', '=', 'category_translations.category_id');

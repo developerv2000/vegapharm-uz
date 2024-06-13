@@ -13,9 +13,8 @@ return new class extends Migration
    */
   public function up()
   {
-    Schema::create('achievements', function (Blueprint $table) {
+    Schema::create('achievements', function (Blueprint $table) { // replaced with partners
       $table->id();
-      $table->integer('year');
       $table->string('image');
     });
   }

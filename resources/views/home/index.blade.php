@@ -163,29 +163,16 @@
 
 
     {{-- Achievements start --}}
+    {{-- !!!Replaced with partners!!! --}}
     <section class="achievements-section">
         <div class="achievements-section__inner main-container">
             <h1 class="achievements-section__title main-title">{{ __('Наши партнёры') }}</h1>
-            {{-- <div class="achievements-section__text">{!! App\Models\Option::getByKey('achievements')->translate('value') !!}</div> --}}
 
             <div class="achievements-carousel-container owl-carousel-container">
                 <div class="achievements-carousel owl-carousel" id="achievements-carousel">
                     @foreach ($achievements as $achievement)
                         <div class="achievements-carousel__item">
-                            <div class="achievements-carousel__item-header">
-                                <span class="achievements-carousel__item-icon">
-                                    <svg>
-                                        <use href="#achievement-svg"></use>
-                                    </svg>
-                                </span>
-
-                                <div class="achievements-carousel__item-header-text">
-                                    {{ $achievement->year }}<br>
-                                    {{ $achievement->translate('title') }}
-                                </div>
-                            </div>
-
-                            <img class="achievements-carousel__item-image" src="{{ asset('img/achievements/' . $achievement->image) }}" alt="{{ $achievement->translate('title') }}">
+                            <img class="achievements-carousel__item-image" src="{{ asset('img/achievements/' . $achievement->image) }}" alt="partner">
                         </div>
                     @endforeach
                 </div>
