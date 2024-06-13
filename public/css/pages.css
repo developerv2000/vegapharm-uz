@@ -80,14 +80,15 @@
 }
 
 .achievements-carousel__item-header {
-  display: flex;
+  display: none;
+  /* display: flex;
   align-items: center;
   background: var(--main-color);
   border-radius: 24px;
   color: white;
   padding: 6px;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
 }
 
 .achievements-carousel__item-icon {

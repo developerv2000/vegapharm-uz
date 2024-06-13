@@ -8,7 +8,7 @@
 
             <ul class="header__contacts">
                 <li>
-                    <a class="header__contacts-link">
+                    <a class="header__contacts-link" href="tel:{{ App\Models\Option::getByKey('phone')->translate('value') }}">
                         {{ __('Телефон') }}: <br>
                         {{ App\Models\Option::getByKey('phone')->translate('value') }}
                     </a>

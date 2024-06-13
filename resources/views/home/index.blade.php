@@ -165,8 +165,8 @@
     {{-- Achievements start --}}
     <section class="achievements-section">
         <div class="achievements-section__inner main-container">
-            <h1 class="achievements-section__title main-title">{{ __('Достижения и номинации') }}</h1>
-            <div class="achievements-section__text">{!! App\Models\Option::getByKey('achievements')->translate('value') !!}</div>
+            <h1 class="achievements-section__title main-title">{{ __('Наши партнёры') }}</h1>
+            {{-- <div class="achievements-section__text">{!! App\Models\Option::getByKey('achievements')->translate('value') !!}</div> --}}
 
             <div class="achievements-carousel-container owl-carousel-container">
                 <div class="achievements-carousel owl-carousel" id="achievements-carousel">
@@ -271,16 +271,16 @@
                     @foreach ($cities as $city)
                         <div class="accordion-content__item presence-accordion-content__item @if ($loop->first) accordion-content__item--active @endif" data-id="city{{ $city->id }}">
                             <p class="presence-accordion-content__address">{{ __('Адрес регионального офиса') }}:<br>{{ $city->translate('address') }}</p>
-                            <p class="presence-accordion-content__phone">{{ __('Телефон') }}:<br>{{ $city->translate('phone') }}</p>
-                            <p class="presence-accordion-content__email">{{ __('Почта') }}:<br>{{ $city->translate('email') }}</p>
+                            <a class="presence-accordion-content__phone" href="tel:{{ $city->translate('phone') }}">{{ __('Телефон') }}:<br>{{ $city->translate('phone') }}</a>
+                            <a class="presence-accordion-content__email" href="mailto:{{ $city->translate('email') }}">{{ __('Почта') }}:<br>{{ $city->translate('email') }}</a>
                         </div>
                     @endforeach
 
                     @foreach ($countries as $country)
                         <div class="accordion-content__item presence-accordion-content__item" data-id="country{{ $country->id }}">
                             <p class="presence-accordion-content__address">{{ __('Адрес регионального офиса') }}:<br>{{ $country->translate('address') }}</p>
-                            <p class="presence-accordion-content__phone">{{ __('Телефон') }}:<br>{{ $country->translate('phone') }}</p>
-                            <p class="presence-accordion-content__email">{{ __('Почта') }}:<br>{{ $country->translate('email') }}</p>
+                            <a class="presence-accordion-content__phone" href="tel:{{ $country->translate('phone') }}">{{ __('Телефон') }}:<br>{{ $country->translate('phone') }}</a>
+                            <a class="presence-accordion-content__email" href="mailto:{{ $country->translate('email') }}">{{ __('Почта') }}:<br>{{ $country->translate('email') }}</a>
                         </div>
                     @endforeach
                 </div>

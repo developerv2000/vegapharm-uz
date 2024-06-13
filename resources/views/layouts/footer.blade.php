@@ -18,7 +18,7 @@
           {{ App\Models\Option::getByKey('regional-office-address')->translate('value') }}
         </p>
 
-        <p class="footer__contacts-item">
+        <a class="footer__contacts-item" href="tel:{{ App\Models\Option::getByKey('phone')->translate('value') }}">
           {{ __('Телефон') }}:<br>
           {{ App\Models\Option::getByKey('phone')->translate('value') }}
         </p>
