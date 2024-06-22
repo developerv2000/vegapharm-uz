@@ -242,11 +242,47 @@ function ajaxGetProducts() {
         success: function (result) {
             let listWrapper = document.querySelector('#products-list-wrapper');
             listWrapper.innerHTML = result;
+
+            updateWindowUrlAfterAjaxProductsGet(category);
         },
         error: function (xhr) {
             console.log("Ajax products get error: " + xhr.status + " " + xhr.statusText)
         }
     });
+}
+
+
+function updateWindowUrlAfterAjaxProductsGet(category) {
+    // Get the current URL
+    let currentUrl = window.location.href;
+
+    // Split the URL into base URL, query string, and anchor
+    let urlParts = currentUrl.split('#');
+    let baseUrl = urlParts[0]; // Base URL before '#'
+    let anchorPart = urlParts[1] ? '#' + urlParts[1] : ''; // Anchor part, if present
+
+    // Check if the base URL already has a query string
+    let queryString = '';
+    if (baseUrl.includes('?')) {
+        let parts = baseUrl.split('?');
+        baseUrl = parts[0]; // Get the base URL without the query string
+        queryString = parts[1]; // Get the query string part
+    }
+
+    // Parse the query string into an object
+    let params = new URLSearchParams(queryString);
+
+    // Replace category
+    if (params.has('category')) {
+        params.set('category', category);
+    } else {
+        params.append('category', category);
+    }
+
+    // Construct the updated URL with updated query parameters and anchor
+    let updatedUrl = baseUrl + '?' + params.toString() + anchorPart;
+
+    window.history.replaceState(null, '', updatedUrl);
 }
 
 
