@@ -56,6 +56,9 @@ class CategoryController extends Controller
       $translation->save();
     }
 
+    $item->slug = Helper::generateUniqueSlug($item->translate('title', Locale::getDefaultValue()), Category::class);
+    $item->save();
+
     return redirect()->route('categories.translations', $item->id);
   }
 
@@ -83,6 +86,9 @@ class CategoryController extends Controller
     $fields = ['title'];
     Helper::fillModelColumns($translation, $fields, $request);
     $translation->save();
+
+    $item->slug = Helper::generateUniqueSlug($item->translate('title', Locale::getDefaultValue()), Category::class);
+    $item->save();
 
     return redirect()->back();
   }

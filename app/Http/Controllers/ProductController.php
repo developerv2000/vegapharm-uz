@@ -37,10 +37,12 @@ class ProductController extends Controller
         }
 
         // filter category
-        $categoryId = $request->category_id;
-        if ($categoryId && $categoryId != 'all') {
-            $products = $products->whereHas('categories', function ($q) use ($categoryId) {
-                $q->where('id', $categoryId);
+        $categorySlug = $request->category;
+        $category = Category::where('slug', $categorySlug)->first();
+
+        if ($categorySlug && $categorySlug != 'all') {
+            $products = $products->whereHas('categories', function ($q) use ($category) {
+                $q->where('id', $category->id);
             });
         }
 
@@ -49,8 +51,8 @@ class ProductController extends Controller
         if ($request->prescription == null || $request->prescription == 'all') {
             array_push($appendExcepts, 'prescription');
         }
-        if (!$categoryId || $categoryId == 'all') {
-            array_push($appendExcepts, 'category_id');
+        if (!$categorySlug || $categorySlug == 'all') {
+            array_push($appendExcepts, 'category');
         }
 
         $products = $products->orderBy('title')

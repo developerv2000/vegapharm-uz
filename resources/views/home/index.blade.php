@@ -201,7 +201,7 @@
                 <ul class="home-products__categories-list">
                     @foreach ($categories as $category)
                         <li class="home-products__categories-item">
-                            <a class="home-products__categories-link" href="{{ route('products.index') . '?category_id=' . $category->id . '#products-section' }}">
+                            <a class="home-products__categories-link" href="{{ route('products.index') . '?category=' . $category->slug . '#products-section' }}">
                                 <span class="material-icons-outlined">east</span>
                                 {{ $category->title }}
                             </a>
