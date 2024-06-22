@@ -40,7 +40,7 @@ class AppServiceProvider extends ServiceProvider
         // remove locale segment from request path if it`s not default locale
         if (app()->getLocale() != Locale::getDefaultValue()) {
           $localeSegmentLength = strlen(request()->segment(1)) + 1;
-          $requestPath = substr($requestPath, $localeSegmentLength);
+          $requestPath = '/' . substr($requestPath, $localeSegmentLength);
         }
       }
 

@@ -113,8 +113,6 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
 
 Route::prefix(parseLocale())->group(function () {
     Route::get('/', [MainController::class, 'home'])->name('home');
-    Route::get('/example1', [MainController::class, 'example1'])->name('example1');
-    Route::get('/example2', [MainController::class, 'example2'])->name('example2');
 
     Route::get('/products', [ProductController::class, 'index'])->name('products.index');
     Route::get('/products/{slug}', [ProductController::class, 'show'])->name('products.show');
@@ -141,3 +139,4 @@ function parseLocale()
 }
 
 require __DIR__ . '/auth.php';
+require __DIR__ . '/redirects.php';

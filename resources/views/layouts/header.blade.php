@@ -33,7 +33,7 @@
                                     @if ($locale->value == App\Models\Locale::getDefaultValue())
                                         <a class="dropdown__link" href="/{{ $validatedRequestPath }}">{{ $locale->value }}</a>
                                     @else
-                                        <a class="dropdown__link" href="/{{ $locale->value . '/' . $validatedRequestPath }}">{{ $locale->value }}</a>
+                                        <a class="dropdown__link" href="/{{ $locale->value . $validatedRequestPath }}">{{ $locale->value }}</a>
                                     @endif
                                 @endif
                             </li>
