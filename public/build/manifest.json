@@ -8,12 +8,12 @@
     ]
   },
   "public/js/app.js": {
-    "file": "assets/app.0f3dcb2b.js",
+    "file": "assets/app.fa2cf378.js",
     "src": "public/js/app.js",
     "isEntry": true
   },
   "public/js/dashboard.js": {
-    "file": "assets/dashboard.b4fc5daa.js",
+    "file": "assets/dashboard.a8eefb27.js",
     "src": "public/js/dashboard.js",
     "isEntry": true
   },
