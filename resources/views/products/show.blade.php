@@ -91,7 +91,7 @@
         <div class="product-card__text-conent">
           <h3 class="product-card__title">{{ $product->translate('title') }}</h3>
           <span class="product-card__prescription">{{ $product->prescription ? 'RX' : 'OTC' }}</span>
-          <div class="product-card__description">{!! $product->translate('description') !!}</div>
+          <div class="product-card__text">{!! $product->translate('description') !!}</div>
 
           <div class="accordion-buttons-container product-accordion-buttons-container">
             <button class="accordion-button product-accordion-button" data-content-id="compositionContent">

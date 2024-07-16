@@ -55,7 +55,7 @@
   text-transform: uppercase;
 }
 
-.product-card__description {
+.product-card__text {
   margin: 12px 0;
   font-weight: 300;
   overflow: hidden;
@@ -65,7 +65,7 @@
   -webkit-box-orient: vertical;
 }
 
-.product-card--horizontal .product-card__description {
+.product-card--horizontal .product-card__text {
   display: block;
   overflow: visible;
 }
