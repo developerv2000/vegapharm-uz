@@ -133,7 +133,7 @@
 
 {{-- Similar Products start --}}
 @if(count($similarProducts))
-  <section class="similar-products">
+  <section class="similar-products" data-nosnippet>
     <div class="similar-products__inner main-container">
       <h1 class="similar-products__title main-title">{{ __('Похожие препараты') }}</h1>
       <x-products-carousel :products="$similarProducts" />
@@ -142,7 +142,7 @@
 @endif {{-- Similar Products end --}}
 
 {{-- Popular products start --}}
-<section class="popular-products products-show-popular-products @if(count($similarProducts)) popular-products--blue @endif">
+<section class="popular-products products-show-popular-products @if(count($similarProducts)) popular-products--blue @endif" data-nosnippet>
   <div class="popular-products__inner main-container">
     <h1 class="popular-products__title main-title">{{ __('Популярные препараты') }}</h1>
     <x-products-carousel :products="$popularProducts" />
