@@ -22,10 +22,6 @@
 .dropdown:hover .dropdown__list {
   visibility: visible;
   opacity: 1;
-  height: 44px;
-  border-radius: 50%;
-  font-weight: 800;
-  justify-content: center;
 }
 
 /* ------------ /end Dropdown ------------ */
